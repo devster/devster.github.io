@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Roki - The powerful static web server</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Roki is an on-premise web server designed to launch any static project instantly with builtin features: Analytics, Forms, Automatic Security and much more!" />
+        <meta name="keywords" content="web, server, static, analytics, forms, security, on-premise" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/icon.svg" />
+
+        <!-- Main Css -->
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/icons.min.css" />
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+    
+    <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky bg-white dark:bg-slate-900">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo pl-0" href="/">
+                    ROKI
+                </a>
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline mb-0">
+                        <a href="" class="btn rounded-full bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white">Documentation</a>
+                    </li>
+            
+                    <li class="inline pl-1 mb-0">
+                        <a href="" class="btn rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white">Download (soon)</a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="/" class="sub-menu-item">Home</a></li>
+                        <li><a href="pricing.html" class="sub-menu-item">Pricing</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-36 lg:py-44 overflow-hidden">
+            <div class="container">
+                <div class="relative grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+                    <div class="md:col-span-7">
+                        <div class="md:mr-6">
+                            <svg style="margin-left: auto;margin-right: auto;margin-bottom: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="40 16 432.00006103515625 480" x="0" y="0" height="15%" width="15%" class="icon-icon-0" data-fill-palette-color="accent" id="icon-0">
+                                <path d="M464 104V83.313a35.048 35.048 0 0 0-8-22.389V24a8 8 0 0 0-8-8H424a8 8 0 0 0-8 8V60.924a35.048 35.048 0 0 0-8 22.389V104H392V86.624A24.038 24.038 0 0 0 408 64V40a8 8 0 0 0-8-8H336a8 8 0 0 0-8 8V64a24.038 24.038 0 0 0 16 22.624V104H328a8 8 0 0 0-7.155 11.578 65.511 65.511 0 0 0 38.916 33.347l-4.082 4.082-40.603 13.535-36.566-51.191a8 8 0 0 0-3.261-2.662L215.411 86.095A32.02 32.02 0 0 0 216 80V24a8 8 0 0 0-8-8H184a8 8 0 0 0-4.438 1.344l-24 16A7.999 7.999 0 0 0 152 40V80a32.02 32.02 0 0 0 0.589 6.095L92.751 112.689a7.996 7.996 0 0 0-3.407 2.874l-48 71.999A8.002 8.002 0 0 0 40 192v40a8.03 8.03 0 0 0 0.155 1.569l16 80A8 8 0 0 0 64 320H88a8 8 0 0 0 8-8V226.667l12.734-16.979 10.894 38.13-7.217 21.652A8.002 8.002 0 0 0 112 272V488a8 8 0 0 0 8 8h32a7.999 7.999 0 0 0 7.907-6.783L174.863 392h18.274l14.956 97.217A7.999 7.999 0 0 0 216 496h32a8 8 0 0 0 8-8V272a8.002 8.002 0 0 0-0.411-2.53l-7.217-21.652 12.018-42.061 30.612 24.49A8 8 0 0 0 296 232h24a8.003 8.003 0 0 0 4.65-1.49l56-40c0.163-0.117 0.315-0.243 0.467-0.37l0.005 0.006 48-40c0.166-0.138 0.305-0.297 0.457-0.446a65.487 65.487 0 0 0 41.576-34.122A8 8 0 0 0 464 104ZM432 32h8v8h-8Zm-8 51.313a19.184 19.184 0 0 1 5.657-13.656A7.999 7.999 0 0 0 432 64V56h8v8a7.999 7.999 0 0 0 2.343 5.657A19.184 19.184 0 0 1 448 83.313V104H424ZM392 64a8 8 0 0 1-16 0V48h16ZM344 48h16V64a8 8 0 0 1-16 0Zm16 38.624a24.016 24.016 0 0 0 8-4.755 24.016 24.016 0 0 0 8 4.755V104H360ZM248 190.878l-15.692 54.924a8.004 8.004 0 0 0 0.103 4.728L240 273.298V376H128V273.298l7.589-22.768a8.004 8.004 0 0 0 0.103-4.728L120 190.878V118.088l17.348-7.711 9.07 36.28a38.739 38.739 0 0 0 75.164 0l9.07-36.279L248 118.088ZM168 80V64h32V80a16 16 0 0 1-32 0Zm47.809 23.781l-9.749 38.995A22.692 22.692 0 0 1 192 158.537V110.987a32.056 32.056 0 0 0 16.514-10.448ZM168 44.281L186.422 32H200V48H168Zm8 66.706v47.55a22.692 22.692 0 0 1-14.06-15.761l-9.749-38.995 7.295-3.242A32.056 32.056 0 0 0 176 110.987ZM70.559 304l-4.8-24H80v24ZM81.6 219.2A8.001 8.001 0 0 0 80 224v40H62.558L56 231.208V194.422l45.369-68.054L104 125.199v64.135ZM145.137 480H128V392h30.675ZM240 480H222.863l-13.538-88H240Zm77.437-264H298.806L264 188.155V125.199l2.758 1.226 38.732 54.224a8 8 0 0 0 9.04 2.941l42.203-14.069 8.314 12.471Zm60.281-43.845l-7.424-11.136L379.314 152h22.59ZM412.223 136H379.777A49.593 49.593 0 0 1 343.126 120H448.874A49.593 49.593 0 0 1 412.223 136Z" fill="#4f46e5" data-fill-palette-color="accent"/>
+                            </svg>
+                            <h4 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative">
+                                Host your static website <br> without
+                                <span class="after:absolute after:right-0 after:left-0 after:bottom-3 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-indigo-600/30 relative text-indigo-600">compromise</span>
+                            </h4>
+                            <p class="text-slate-400 text-lg max-w-xl">
+Roki is an on-premise web server designed to launch any static project instantly with builtin features: Analytics, Forms, Automatic Security and much more!<br>
+                            </p>
+                        
+                            <div class="relative mt-8">
+                                <a href="" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mr-2">Download (soon)</a>
+                                then learn <a href="" class="text-indigo-600 font-bold">how to get stared</a>
+                            </div>
+                            <p class="text-slate-400 text-sm max-w-xl mt-5">
+                                <a href="#getintouch"><u>Leave your email to be notified at the launch.</u></a>
+                            </p>
+
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="md:col-span-5">
+                        <img src="assets/images/hero-min.png" class="lg:max-w-none md:max-w-md" alt="">
+                    </div><!--end col-->
+
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section class="relative">
+            <div class="container lg mx-auto">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                        One-liner to start a production ready, fully observable website.
+                    </h3>
+
+                    <img src="assets/images/console-min.png" style="margin: 0 auto;"/>
+                </div><!--end grid-->
+            </div>
+        </section>
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="features">
+            <div class="container lg mx-auto mb-16">
+                <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
+                    <quote class="text-slate-400"><i>
+                        " It is like Netlify and Caddy server had a baby. And I can fire up this baby in seconds to
+                        launch landing pages and have my own analytics already working. Sign me up! "
+
+                    </i><br>
+                        -- <strong>Mike Pernan</strong> <small>CMO at MailChimp</small>
+                    </quote>
+                </div>
+            </div>
+
+            <div class="container lg mx-auto">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Features</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">
+                        Roki si designed to be simple to use but comes fully featured.
+                    </p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-4 gap-[30px]">
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-adjust-circle"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">No Setup, No Config</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                Roki is single executable file with no dependencies. It comes preconfigured with the best default and security.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-analytics"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Analytics</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                Analyse your audience right out of the box.
+                                Follow realtime metrics in your dashboard: pageviews, visitors, forms conversion rate, utms and export or share reports.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-wrap-text"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Forms</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                Forms working instantly.<br>
+                                Roki carefully collects every form submission in your dashboard where you can view, manage, and export the data.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-shield-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Security</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                HTTPS and security by default.<br>
+                                Roki obtains and renews TLS certificates for your sites automatically. It even staples OCSP responses.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-circuit"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Convenience</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                Roki automatically do a lot of things for you, such as
+                                optimize your website for accessibility, SEO and performance.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <i class="uil uil-fire"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="" class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Runs everywhere</a>
+                            <p class="text-slate-400 transition duration-500 ease-in-out mt-3">
+                                Any OS, any CPU architecture.
+                                Roki take care of itself and your data by controlling its footprint.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Launch Anything</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">
+                        From the most sophisticated headless website to the humblest html file, your project is ready for production instantly.
+                        <br>
+                        We use Roki to serve this very website. And we use it again to serve all Roki builds.
+                    </p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] mt-8">
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="monitor" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Showcase site</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="heart" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Landing page</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="eye" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Blog</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="layout" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Docs site</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="feather" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Survey</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="code" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Maintenance site</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="user-check" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Web app</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="globe" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Portfolio</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                            <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                                <i data-feather="settings" class="h-5 w-5 rotate-45"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="mb-0 text-lg font-medium">Event site</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+
+            </div><!--end contanier-->
+
+            <div class="container md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center mt-16 gap-[30px]">
+                    <div class="relative">
+                        <div class="md:mr-10">
+                            <img src="assets/images/analytics-min.png" class="rounded-lg shadow-md dark:shadow-gray-800" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="lg:ml-8 mt-8 md:mt-0">
+                        <h4 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                            Powerful Analytics
+                        </h4>
+                        <p class="text-slate-400">
+                            Analytics are builtin in Roki, start seeing analytics data in the dashboard as soon as the server starts.
+                        </p>
+                        <ul class="list-none text-slate-400 mt-4">
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Realtime pageviews, unique visitors and more well crafted reports.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Source and Marketing metrics such as UTM, ad campaign, etc.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Forms conversion rate and metrics.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Monitoring analytics: requests volume, bandwidth, response time and more.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Export and share reports.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>GDPR Compliant.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Accurate data from server-side.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>No scripts of any kind.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>The data is yours.</li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find Out More <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+                    <div class="relative order-1 md:order-2">
+                        <img src="assets/images/forms-min.png" class="rounded-lg shadow-md dark:shadow-gray-800" alt="">
+                    </div>
+
+                    <div class="lg:mr-8 order-2 md:order-1">
+                        <h4 class="mb-4 md:text-3xl text-2xl leading-normal font-medium">Working Forms Instantly</h4>
+                        <p class="text-slate-400">
+                            Gather responses from any form. <br>
+                            Nothing to wire up. <br>
+                            Just instant data in your dashboard.
+                        </p>
+                        <ul class="list-none text-slate-400 mt-4">
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Receive forms submissions without server code or javascript.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Views and manage responses.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Anti spam filter and automatic captcha.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Be notified of every new submission.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Configure webhooks for every forms.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Export the data.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>The data is yours.</li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find Out More <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="container md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center mt-16 gap-[30px]">
+                    <div class="relative">
+                        <div class="md:mr-10">
+                            <img src="assets/images/optimization-min.png" class="rounded-lg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="lg:ml-8 mt-8 md:mt-0">
+                        <h4 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                            Optimization and Convenience
+                        </h4>
+                        <p class="text-slate-400">
+                            Roki is a fire and forget server, it takes care of itself as of your website. It aims to do all the hassle for you.
+                        </p>
+                        <ul class="list-none text-slate-400 mt-4">
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Automatic security on the edge (HTTPS).</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Handle millions of requests with one server.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Monitor errors (specially 404).</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Easily manage redirections without ops.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Generates sitemap.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Compress your assets (image, html, css, js).</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Automatic assets cache headers.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Aggregate and rotate the data to never running out of space.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Clean the output: comment from the html, exif data from images.</li>
+                            <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl mr-2"></i>Share website from your machine: integrates perfectly with ngrok.</li>
+
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find Out More <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Ownership and Privacy</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">
+                        Roki is a single binary that works on any OS or platform.<br>
+                        The choice is yours where you host it, on metal with a kernel or in any hosting or
+                        cloud company that meet your requirements.<br>
+                        Roki server integrates mechanisms to meet the European GDPR compliance.<br>
+                        All the data collected and generated are written beside the server, you have complete control over it.
+                    </p>
+                </div><!--end grid-->
+            </div>
+
+        </section><!--end section-->
+        <!-- End  -->
+        <section class="relative py-16" id="getintouch">
+            <div class="container lg mx-auto">
+                <div class="grid grid-cols-1 md:mt-44 mt-32 text-center">
+                    <h4 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5">Get In Touch</h4>
+                    <p class="text-slate-400 text-lg max-w-xl mx-auto">
+                        Leave your email address to get a unique notification mail about the release. Thanks for your interest in the project.
+                    </p>
+
+                    <div class="mt-6">
+                        <div class="subcribe-form mt-6 mb-3">
+                            <form class="relative mx-auto max-w-xl">
+                                <input type="email" id="subcribe" name="email" class="pt-4 pr-40 pb-4 pl-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" placeholder="Your Email Address :">
+                                <button type="submit" class="btn absolute top-[2px] right-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full">Notify me <i class="uil uil-arrow-right"></i></button>
+                            </form><!--end form-->
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div>
+        </section>
+
+
+        <!-- Footer Start -->
+        <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">    
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="py-[60px] px-0">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/icon.svg" alt="" width="15%"> ROKI
+                                    </a>
+                                    <p class="mt-6 text-gray-300">
+                                        Roki server the ultimate web server for static website.
+                                    </p>
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-behance" title="Behance"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                                        <li class="inline"><a href="" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-4">
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="page-aboutus.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li class="mt-[10px]"><a href="page-services.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
+                                        <li class="mt-[10px]"><a href="page-team.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Team</a></li>
+                                        <li class="mt-[10px]"><a href="page-pricing.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Pricing</a></li>
+                                        <li class="mt-[10px]"><a href="portfolio-creative-four.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Project</a></li>
+                                        <li class="mt-[10px]"><a href="blog.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="page-terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
+                                        <li class="mt-[10px]"><a href="page-privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                                        <li class="mt-[10px]"><a href="documentation.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
+                                        <li class="mt-[10px]"><a href="changelog.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Changelog</a></li>
+                                        <li class="mt-[10px]"><a href="widget.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b me-1"></i> Widget</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div><!--end col-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="py-[30px] px-0 border-t border-slate-800">
+                <div class="container text-center">
+                    <div class="grid md:grid-cols-2 items-center">
+                        <div class="md:text-left text-center">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> by Roki Server</p>
+                        </div>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
